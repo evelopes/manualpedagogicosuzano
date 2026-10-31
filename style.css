@@ -4,3 +4,8 @@
 .hero::after{display:none!important;content:none!important}
 .hero{isolation:isolate}
 @media(max-width:700px){.hero{overflow:visible}.hero .primary{position:relative;z-index:1;max-width:100%;white-space:normal;text-align:center}.buy{min-height:58px;overflow-wrap:anywhere}}
+
+/* Checkout direto: verde consistente, sem interferencia do widget Hotmart */
+#buy.buy{display:flex!important;background:linear-gradient(180deg,#58a83b,#8dcc36)!important;color:#fff!important;border:0!important;box-shadow:0 5px 0 #397b28!important;text-decoration:none!important;opacity:1!important;position:relative;z-index:2;min-height:64px;line-height:1.3;}
+#buy.buy:hover,#buy.buy:focus-visible{background:linear-gradient(180deg,#4b982f,#7ebf2b)!important;color:#fff!important;}
+.hero::after{display:none!important;content:none!important;}
